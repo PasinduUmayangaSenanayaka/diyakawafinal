@@ -1,0 +1,114 @@
+/* new css desings  2024-09-10*/
+
+.iconSize {
+  font-size: 80px;
+}
+
+@media (max-width: 991px) {
+  .iconSize {
+    font-size: 150px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .cardSize {
+    width: 235px;
+    height: 200px;
+  }
+}
+
+/* 2024/09/11 css editing */
+
+.textCss {
+  color: white;
+  font-size: 13px;
+  visibility: visible;
+  font-weight: bold;
+}
+
+@media (max-width: 990px) {
+  .textCss {
+    visibility: hidden;
+  }
+}
+
+.scleHover:hover::placeholder {
+  font-size: small;
+}
+
+.buttouncss:hover {
+  letter-spacing: 0.5px;
+  scale: 1.01;
+}
+
+.msgColor{
+  color: red;
+}
+
+
+
+.modal {
+  display: none; 
+  position: absolute; 
+  z-index: 12; 
+  left: 10;
+  top: 1;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: end;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+}
+.dropdown input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.dropdown-list {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1;
+  display: none;
+  max-height: 150px;
+  overflow-y: auto;
+}
+.dropdown-list div {
+  padding: 8px;
+  cursor: pointer;
+}
+.dropdown-list div:hover {
+  background-color: #f1f1f1;
+}
